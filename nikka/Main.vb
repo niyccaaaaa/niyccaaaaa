@@ -18,4 +18,10 @@
     Private Sub Label2_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim SQLSTATEMENT As String = "UPDATE 'user' SET 'Fullname' = ' " & TextBox1.Text & " ',TextBox2' =" & TextBox1.Text & " ' 'TextBox4.Text' =" & TextBox2.Text
+        save(SQLSTATEMENT)
+        MsgBox("Data update successfuly", vbInformation)
+    End Sub
 End Class
